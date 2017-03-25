@@ -1,0 +1,448 @@
+@import url('reset.css');
+@import url('font-awesome-4.7.0/css/font-awesome.min.css')
+*
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+body
+	font-family: Microsoft JhengHei;
+.clearfix
+	clear: both
+.wrap
+	width: 100%
+.header
+	width: 100%
+	height: auto
+	background-image: url('../img/bokeh_car_lights_bg.jpg')
+	background-size: 100% 100%
+	background-repeat: no-repeat
+.logo
+		display:block
+		width: 50px
+		height: 50px
+		background-image: url('../img/rocket.svg')
+		background-size: 100% 100%
+		background-repeat: no-repeat
+		position: absolute
+		margin-top: 2%
+		margin-left: 2%
+		text-decoration: none
+		text-indent: 100%
+		overflow: hidden
+		z-index: 999
+		@media(max-width: 500px)
+			width: 35px
+			height: 35px
+
+
+.bar
+	display: none
+	position: absolute
+	color: rgba(255,255,255,0.9)
+	background: rgba(128,128,128, 0.5)
+	font-size: 2em
+	right: 2%
+	top: 1%
+	width: 40px
+	height: 40px
+	z-index: 998
+	text-align: center
+	padding-top: 2px
+	border-radius: 100%
+	transition: ease 1s
+	@media(max-width: 768px)
+		display: block
+
+.bar:hover
+	color: rgba(255,255,255,0.9)
+	background: rgba(0,0,0,0.3)
+
+
+.menu
+	position: absolute
+	z-index: 9999
+	width: 440px
+	right: 50px
+	top: 50px
+	@media(max-width: 768px)
+		display: none
+		background: rgba(0,0,0,0.9)
+		top: 0
+		right: 0
+		width: 100%
+		padding-top: 50px
+		padding-bottom: 20px
+	li
+		float: left
+		@media(max-width: 768px)
+			text-align: center
+			float: none
+			width: 100%
+			padding: 10px
+		a
+			display: block
+			text-decoration: none
+			font-size: 1.2em
+			color: rgba(255,255,255,0.7)
+			padding: 10px 20px 10px 20px
+		a:hover
+			color: rgba(255,255,255,1.0)
+	.sign
+		background: rgba(255,255,255,0.9)
+		border-radius: 30px
+		@media(max-width: 768px)
+			background: none
+		a
+			color: rgba(0,0,0,0.6)
+			@media(max-width: 768px)
+				color: rgba(255,255,255,0.7)
+		a:hover
+			color: rgba(0,0,0,1.0)
+			@media(max-width: 768px)
+				color: rgba(255,255,255,0.9)
+
+.menuClose
+	color: white
+	font-size: 2em
+	float: right
+	margin-right: 25px
+	margin-top: -35px
+	display: none
+	@media(max-width: 768px)
+		display: block
+
+.menuClose:hover
+	color: blue
+
+
+.view
+	background: rgba(0,0,0,0.3)
+	width: 100%
+	height: 100%
+	position: relative
+	margin: 0 auto
+	text-align: center
+	padding-top: 13%
+	padding-bottom: 5%
+	h2
+		font-size: 5em
+		color: white
+		font-weight: bold
+		@media(max-width: 768px)
+			font-size: 3em
+	h3
+		font-size: 1.8em
+		margin-top: 5%
+		color: white
+		@media(max-width: 768px)
+			font-size: 1.5em
+	a
+		text-decoration: none
+		display: block
+		margin: 0 auto
+		margin-top: 5%
+		font-size: 1.3em
+		padding-top: 1.2%
+		padding-bottom: 1.2%
+		width: 300px
+		border-radius: 30px
+		background: #3cadd4
+		color: white
+	a:hover
+		background: #51b6d9
+.content
+	padding-top: 5%
+	text-align: center
+	background: #f5f5f5
+	h2
+		font-size: 3em
+		font-weight: bold
+		color: #474747
+		@media(max-width: 768px)
+			font-size: 2em
+	h3
+		padding-top: 1%
+		font-size: 1.5em
+		color: #8f8f8f
+		@media(max-width: 768px)
+			font-size: 1.3em
+	>ul
+		padding-top: 5%
+		padding-left: 8%
+		padding-right: 5%
+		background: #f5f5f5
+		@media (max-width: 768px)
+			padding: 5% 
+		>li
+			float: left
+			border: 1px solid #e4e4e4
+			width: 30%
+			margin-right: 3%
+			margin-bottom: 10%
+			border-radius: 2px
+			padding-top: 4%
+			background: white
+			@media (max-width: 768px)
+				float: none
+				width: 100%
+
+		
+			ul
+				li
+					display: block
+					h4
+						color: #858585
+						font-weight: bold
+						font-size: 1.5em
+						margin-top: 5%
+						line-height: 30px
+					span
+						display: block
+						width: 150px
+						height: 150px
+						border: 1px solid #e4e4e4
+						border-radius: 100%
+						margin: 0 auto
+						i
+							font-size: 3em
+							margin-top: 32.5%
+							color: white
+					.cloud
+						background: #3cadd4
+
+					.notebook
+						background: #add43c
+					.rocket
+						background: #d43c61
+					p
+						padding: 5% 11% 10% 11%
+
+.intro
+	border-top: 1px solid #dddddd
+	padding-top: 5%
+	text-align: center
+	h2
+		font-size: 3em
+		font-weight: bold
+		color: #474747
+		@media(max-width: 768px)
+			font-size: 2em
+	h3
+		padding-top: 1%
+		font-size: 1.5em
+		color: #8f8f8f
+		@media(max-width: 768px)
+			font-size: 1.3em
+	ul
+		display: block
+		margin: 3% 5% 3% 5%
+		border-top: 1px solid #dddddd
+		border-bottom: 1px solid #dddddd
+		@media(max-width: 650px)
+			padding-bottom: 4%
+		li
+			float: left
+			width: 25%
+			padding-bottom: 5%
+			padding-top: 5%
+			@media(max-width: 768px)
+				width: 50%
+			@media(max-width: 650px)
+				width: 100%
+				float: none
+				text-align: center
+				padding-bottom: 2%
+				padding-top: 4%
+
+			img
+				float: left
+				border-radius: 100%
+				margin-right: 2.5%
+				margin-left: 2.5%
+				@media(max-width: 650px)
+					float: none
+			h4
+				font-size: 1.2em
+				font-weight: bold
+				margin-top: 7%
+				text-align: left
+				@media(max-width: 650px)
+					text-align: center
+					margin-top: 2%
+			p
+				padding-top: 3%
+				text-align: left
+				@media(max-width: 650px)
+					text-align: center
+	>p
+		padding-left: 25%
+		padding-right: 25%
+		line-height: 30px
+		@media(max-width: 768px)
+			padding: 5%
+	a
+		text-decoration: none
+		display: block
+		margin: 0 auto
+		margin-top: 2%
+		font-size: 1.3em
+		padding-top: 1.2%
+		padding-bottom: 1.2%
+		width: 300px
+		border-radius: 30px
+		background: #3cadd4
+		color: white
+		margin-bottom: 5%
+	a:hover
+		background: #51b6d9
+.mes
+	background: #3cadd4
+	text-align: center
+	padding-top: 8%
+	h2
+		font-size: 3em
+		font-weight: bold
+		color: white
+		@media(max-width: 768px)
+			font-size: 2em
+	h3
+		padding-top: 1%
+		font-size: 1.5em
+		color: white
+		@media(max-width: 768px)
+			font-size: 1.3em
+	ul
+		width: 500px
+		@media(max-width: 768px)
+			width: 80%
+		margin: 0 auto
+		margin-top: 5%
+		input[type="text"],input[type="email"]
+			width: 240px
+			font-size: 1.1em
+			padding: 5% 4% 5% 4%
+			border-radius: 5px
+			border: none
+			border: 1px solid #3cadd4
+			@media(max-width: 768px)
+				width: 100%
+				padding: 2% 2% 2% 2%
+		input[type="text"]:focus,input[type="email"]:focus
+			border: 1px solid black
+		.sideT
+			float: left
+			@media(max-width: 768px)
+				float: none
+				margin-bottom: 10px
+		.sideE
+			float: right
+			@media(max-width: 768px)
+				float: none
+		textarea
+			font-size: 1.2em
+			width: 100%
+			margin-top: 5%
+			padding: 1% 2% 1% 2%
+			border-radius: 5px
+			@media(max-width: 768px)
+				margin-top: 2%
+		input[type="button"]
+			margin-top: 5%
+			font-size: 1.3em
+			color: white
+			background: #383b43
+			border: 0
+			padding: 3% 6% 3% 6%
+			border-radius: 30px
+			margin-bottom: 15%
+			transition: ease 1s
+		input[type="button"]:hover
+			background: #22252a
+			cursor: pointer
+.footer
+	background: #383b43
+	padding: 10% 5% 10% 5%
+	a
+		text-decoration:  none
+		color: #afb1b5
+	>ul
+		border-bottom: 0.8px solid #4e5057
+		padding-bottom: 8%
+		>li
+			float: left
+			width: 24%
+			margin-right: 1%
+			@media(max-width: 768px)
+				width: 49%
+			@media(max-width: 650px)
+				width: 100%
+				float: none
+				text-align: center
+
+			ul
+				li
+					margin-bottom: 6%
+					a:hover
+						text-decoration:  underline		
+	h3
+		color: white
+		font-size: 1.3em
+		font-weight: bold
+		margin-bottom: 10%
+		@media(max-width: 768px)
+			margin-top: 5%
+	
+	h6
+		float: left
+		margin-top: 5%
+		color: #5f6064
+		@media(max-width: 768px)
+			float: none
+	.link
+		border: 0
+		padding: 0
+		margin: 0
+		float: right
+		width: auto
+		margin-top: 3%
+		@media(max-width: 768px)
+			float: none
+		li
+			display: inline
+			margin-right: 10px
+			width: 50px
+			height: 50px
+			padding-top: 10px
+			padding-left: 13px
+		a
+			color: white
+			text-align: center
+			font-size: 2em
+
+
+
+
+
+
+
+
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
