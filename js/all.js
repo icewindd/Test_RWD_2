@@ -8,9 +8,6 @@ $(function () {
 		var viewH = $('.view').position().top;
 		var contentH = $('.content').position().top;
 		var introH = $('.intro').position().top;
-		console.log(scrollVal);
-		console.log(introH);
-		console.log('---------');
 		if(  scrollVal > contentH/2){
 		$('.animateJsUp').addClass('active');
 		}
