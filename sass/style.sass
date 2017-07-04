@@ -1,11 +1,12 @@
-@import url('reset.css');
+@import url('reset.css')
+@import url('animate.css')
 @import url('font-awesome-4.7.0/css/font-awesome.min.css')
 *
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
 body
-	font-family: Microsoft JhengHei;
+	font-family: Microsoft JhengHei
 .clearfix
 	clear: both
 .wrap
@@ -17,22 +18,22 @@ body
 	background-size: 100% 100%
 	background-repeat: no-repeat
 .logo
-		display:block
-		width: 50px
-		height: 50px
-		background-image: url('../img/rocket.svg')
-		background-size: 100% 100%
-		background-repeat: no-repeat
-		position: absolute
-		margin-top: 2%
-		margin-left: 2%
-		text-decoration: none
-		text-indent: 100%
-		overflow: hidden
-		z-index: 999
-		@media(max-width: 500px)
-			width: 35px
-			height: 35px
+	display:block
+	width: 50px
+	height: 50px
+	background-image: url('../img/rocket.svg')
+	background-size: 100% 100%
+	background-repeat: no-repeat
+	position: absolute
+	margin-top: 2%
+	margin-left: 2%
+	text-decoration: none
+	text-indent: 100%
+	overflow: hidden
+	z-index: 999
+	@media(max-width: 500px)
+		width: 35px
+		height: 35px
 
 
 .bar
@@ -128,14 +129,22 @@ body
 		font-size: 5em
 		color: white
 		font-weight: bold
+		opacity: 0
+		transition: ease 1s
 		@media(max-width: 768px)
 			font-size: 3em
+	h2.active
+		opacity: 1
 	h3
 		font-size: 1.8em
 		margin-top: 5%
 		color: white
+		opacity: 0
 		@media(max-width: 768px)
 			font-size: 1.5em
+	h3.active
+		transition: ease 2s
+		opacity: 1
 	a
 		text-decoration: none
 		display: block
@@ -185,8 +194,6 @@ body
 			@media (max-width: 768px)
 				float: none
 				width: 100%
-
-		
 			ul
 				li
 					display: block
@@ -418,11 +425,20 @@ body
 			color: white
 			text-align: center
 			font-size: 2em
-
-
-
-
-
+.animateJsUp
+	transform: translateY(25px)
+	opacity: 0
+	transition: ease 1s
+.animateJsUp.active
+	transform: translateY(0)
+	opacity: 1
+.animateJsDown
+	transform: translateY(-30px)
+	transition: ease 1s
+	opacity: 0
+.animateJsDown.active
+	transform: translateY(0)
+	opacity: 1
 
 
 
